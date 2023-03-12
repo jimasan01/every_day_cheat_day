@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 2023_02_27_115247) do
 
   create_table "cheats", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
+    t.text "image"
     t.text "explanation", null: false
     t.integer "volume_id", null: false
     t.integer "price_id", null: false

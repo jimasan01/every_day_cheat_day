@@ -2,6 +2,7 @@ class CreateCheats < ActiveRecord::Migration[6.0]
   def change
     create_table :cheats do |t|
       t.string      :name,         null: false
+      t.text        :image
       t.text        :explanation,  null: false
       t.integer     :volume_id,    null: false
       t.integer     :price_id,     null: false
