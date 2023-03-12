@@ -4,6 +4,7 @@
       <p><%= cheat.text %></p>
       <span class="name">
         <%= cheat.name %>
+      <%= image_tag cheat.image.variant(resize: '500x500'), class: "item-img" if cheat.image.attached? %>
       </span>
     </div>
   <% end %>
